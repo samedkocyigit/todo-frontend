@@ -1,0 +1,45 @@
+.home-container {
+  display: flex;
+  flex-direction: column; /* Ana konteyner dikey yönde düzenlenecek */
+  align-items: stretch; /*Tüm genişlikte hizalama */
+  height: 100vh; /* Sayfanın yüksekliğini kapla */
+  padding: 20px; /* Üstten ve alttan boşluk ekle */
+  box-sizing: border-box; /* Kenar boşluklarını kapsayan hesaplama */
+}
+
+.logout-button {
+  width: 100px;
+  align-self: flex-end; /* Butonu sağa hizala */
+  margin-bottom: 20px; /* Buton ile üst bileşen arasında boşluk bırak */
+  margin-right: 20px;
+}
+
+.columns {
+  display: flex; /* Kolonları yatay düzlemde yan yana diz */
+  justify-content: space-evenly; /* Kolonlar arasında boşluk bırak */
+  flex-grow: 1; /* Kolonların genişliğini artır */
+}
+
+.column {
+  display: flex;
+  border: 1px solid #ccc; /* Kolonlara kenar ekle */
+  border-radius: 4px; /* Kenarları yuvarla */
+  padding: 10px; /* İçerik ile kenar arasında boşluk bırak */
+  width: 20%; /* Kolon genişliğini ayarla */
+  min-height: 100px; /* Minimum yükseklik ayarla */
+  flex-direction: column; /* İçerik dikey düzlemde yerleşecek */
+  background-color: #e9fac1;
+}
+
+.create-task-button {
+  margin-top: 10px; /* Kolonların altına boşluk bırak */
+}
+
+/* Task Card stili */
+.task-card {
+  border: 1px solid #000; /* Task kartı için kenar rengi */
+  border-radius: 4px; /* Kenarları yuvarla */
+  padding: 10px; /* İçerik ile kenar arasında boşluk bırak */
+  margin: 5px 0; /* Kartlar arasında boşluk bırak */
+  background-color: #f5f8f0;
+}
