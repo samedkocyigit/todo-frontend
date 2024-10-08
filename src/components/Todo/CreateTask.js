@@ -13,7 +13,7 @@ const CreateTask = ({ onCreate, onClose }) => {
 
     if (name && description) {
       try {
-        const newTask = await createTask({
+        await createTask({
           name,
           description,
           userId: user.userId,
@@ -35,7 +35,7 @@ const CreateTask = ({ onCreate, onClose }) => {
         setDescription("");
         onClose();
       } catch (error) {
-        console.error("Task oluşturulurken hata oluştu:", error);
+        console.error("An error occured during create task:", error);
       }
     }
   };

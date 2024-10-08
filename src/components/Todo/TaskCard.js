@@ -27,7 +27,7 @@ const TaskCard = ({ task, onDetailClick }) => {
             color: "blue",
             fontSize: "1.2em",
           }}
-          title="Detaylar"
+          title="Details"
         ></i>
       </div>
     </div>

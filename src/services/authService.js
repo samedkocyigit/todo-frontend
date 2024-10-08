@@ -21,7 +21,6 @@ export const updateTaskStatus = async (taskId, status) => {
 export const fetchTasks = async () => {
   try {
     const response = await axios.get(`${API_URL}/tasks`);
-    console.log("response", response.data.$values);
     return response.data.$values;
   } catch (error) {
     console.error("Error fetching tasks:", error);

@@ -5,7 +5,6 @@ const API_URL = "http://localhost:5086/api";
 export const fetchTasks = async (id) => {
   try {
     const response = await axios.get(`${API_URL}/tasks/user/${id}`);
-    console.log("response.data", response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching tasks:", error);
@@ -13,9 +12,12 @@ export const fetchTasks = async (id) => {
   }
 };
 
-export const updateTaskStatus = async (taskId, status) => {
+export const updateTask = async (taskId, updateTaskDto) => {
   try {
-    const response = await axios.put(`${API_URL}/tasks/${taskId}/${status}`);
+    const response = await axios.put(
+      `${API_URL}/tasks/${taskId}`,
+      updateTaskDto
+    );
     return response.data;
   } catch (err) {
     throw err;

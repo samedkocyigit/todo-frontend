@@ -7,8 +7,8 @@
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  z-index: 1000; /* Modalın diğer bileşenlerin üstünde görünmesini sağlar */
-  width: 300px; /* Modal genişliği */
+  z-index: 1000;
+  width: 300px;
 }
 
 .form {
@@ -38,13 +38,13 @@
 }
 
 .button:hover {
-  background-color: #84e79a; /* Butona hover efekti */
+  background-color: #84e79a;
 }
 
 .button[type="button"] {
-  background-color: #dc3545; /* İptal butonu için farklı renk */
+  background-color: #dc3545;
 }
 
 .button[type="button"]:hover {
-  background-color: #c82333; /* İptal butonuna hover efekti */
+  background-color: #c82333;
 }

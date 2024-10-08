@@ -18,12 +18,15 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await login(userData);
-      setUser({
+      const user = {
         email: response.data.user.email,
         name: response.data.user.name,
         token: response.data.user.token,
         userId: response.data.user.userId,
-      });
+      };
+
+      setUser(user);
+      localStorage.setItem("user", JSON.stringify(user));
       navigate("/home");
     } catch (err) {
       setError("Login failed!");

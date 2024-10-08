@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
@@ -16,6 +17,7 @@ export const UserProvider = ({ children }) => {
     tasks,
     setTasks,
   };
+
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
